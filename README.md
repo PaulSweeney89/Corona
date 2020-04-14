@@ -15,11 +15,22 @@ Covid-19 Daily Statistics for Ireland by County as reported by the Health Survei
 - Matplotlib Basemap Toolkit
 
 **Sample Outputs:**
+
 - Bar plot showing Total Confirmed Covid 19 Cases in Ireland.
+
+![fig1](https://github.com/PaulSweeney89/Corona/blob/master/Outputs/Figure_1.png)
+
 - Bar plot showing Total Confirmed Deaths in Ireland.
+
+![fig2](https://github.com/PaulSweeney89/Corona/blob/master/Outputs/Figure_2.png)
+
 - Plot showing Daily Confirmed New Cases in Ireland.
+
+![fig3](https://github.com/PaulSweeney89/Corona/blob/master/Outputs/Figure_3.png)
+
 - Basemap plot showing Covid 19 cases per County.
 
+![fig4](https://github.com/PaulSweeney89/Corona/blob/master/Outputs/Figure_4.png)
 
 **Note:** There appears to be a discrepancy between the number of confirmed cases between datasets 1 & 2, dataset 2 is reporting lower confirmed cases.
 
