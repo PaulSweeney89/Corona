@@ -44,6 +44,12 @@ for i in range(len(df)):
     plt.text(df.loc[i, "Datestr"], df.loc[i, "ConfirmedCovidCases"] + 0.25, t, size=8)
 plt.show()
 
+plt.plot(df["TotalConfirmedCovidCases"],df["ConfirmedCovidCases"], marker='o', markersize=3, color="green")
+plt.xlabel("Total Confirmed Covid Cases")
+plt.ylabel("Daily New Confirmed Covid Cases")
+plt.title("Ireland Covid 19"+"\n"+str(today))
+plt.show()
+ 
 
 
 
