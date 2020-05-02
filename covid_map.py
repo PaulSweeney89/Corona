@@ -5,16 +5,19 @@ from datetime import date
 
 # Covid-19 dataset csv file from data.gov.ie
 # CovidCountyStatisticsHPSCIreland
-# https://data.gov.ie/dataset/covidcountystatisticshpscireland/resource/db9ee961-0ea9-4f74-b137-a625ffb0efe9
+# https://data.gov.ie/dataset/covid19countystatisticshpscirelandopendata/resource/cd796ddd-38f5-47f7-b8b3-dd2b0621cce6
 
-df = pd.read_csv("http://opendata-geohive.hub.arcgis.com/datasets/07b8a45b715d4e4eb4ad39fc44c4bd06_0.csv?outSR={%22latestWkid%22:3857,%22wkid%22:102100}")
+df = pd.read_csv("http://opendata-geohive.hub.arcgis.com/datasets/4779c505c43c40da9101ce53f34bb923_0.csv?outSR={%22latestWkid%22:3857,%22wkid%22:102100}")
 
 today = date.today()
 
 lons = df['x'].values
 lats = df['y'].values
-names = df['CountyName']
-cases = df['CovidCases']
+names = df['CountyName'].iloc[-26:]
+cases = df['ConfirmedCovidCases'].iloc[-26:]
+
+print(cases)
+print(names)
 
 fig, ax = plt.subplots()
 map = Basemap(projection='merc',
@@ -42,7 +45,14 @@ for w, z, n in zip(xpt,ypt, names):
 
 plt.show()
 
+# Save dataframe as csv file 
 
+filename = str(today) + 'Covid 19 Counties.csv'
+df.to_csv(filename)
+
+# extracting county co-ordinates
+#df_counties = df[['CountyName','Lat', 'Long']] 
+#df_counties.to_csv('County Coordinates.csv')
 
 
 

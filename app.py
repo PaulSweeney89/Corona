@@ -11,7 +11,7 @@ app = dash.Dash()
 
 # Covid-19 dataset csv file from data.gov.ie
 # CovidStatisticsProfileHPSCIrelandOpenData
-# https://data.gov.ie/dataset/covidstatisticsprofilehpscirelandopendata/resource/b8143e99-4929-41bc-ac1c-5520c0666b20
+# https://data.gov.ie/dataset/covidstatisticsprofilehpscirelandopendata
 
 df = pd.read_csv('http://opendata-geohive.hub.arcgis.com/datasets/d8eb52d56273413b84b0187a4e9117be_0.csv?outSR={%22latestWkid%22:3857,%22wkid%22:102100}')
 
