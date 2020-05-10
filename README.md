@@ -10,6 +10,8 @@ Covid-19 Daily Statistics for Ireland by County as reported by the Health Survei
 - *covid.py* used for plotting graphs for dataset 1.
 - *covid_map.py* used for plotting map for dataset 2.
 
+**NOTE:** Input format of dates in the aboce datasets appear to change regularly there, scripts included in repository need to be updated each time to allow for these format changes. 
+
 **Python Libraries:**
 - Pandas
 - Matplotlib
